@@ -2,7 +2,7 @@
  * Implementation of the geometrical concept of a point in two dimensions.
  * Provides methods to access the coordinates as well as to move a point.
  */
-public class Point {
+public class Point implements Measurable {
     private int x;
     private int y;
 
@@ -43,5 +43,14 @@ public class Point {
     public void moveTo(Point remote) {
         this.x = remote.x;
         this.y = remote.y;
+    }
+
+    /**
+     *
+     * @return the distance of the point from the origin
+     */
+    @Override
+    public double getMeasure() {
+        return Math.sqrt(x*x + y*y);
     }
 }
