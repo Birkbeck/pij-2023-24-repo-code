@@ -7,7 +7,8 @@ public class MobilePhone extends OldPhone {
 
     private static final int NUMBER_MEMORY_SIZE = 10;
 
-    public MobilePhone() {
+    public MobilePhone(String brand) {
+        super(brand);
         lastCalledNumbers = new String[NUMBER_MEMORY_SIZE];
     }
 
