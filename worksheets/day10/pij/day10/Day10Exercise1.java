@@ -6,8 +6,8 @@ public class Day10Exercise1 {
             list.add(newElement);
         } catch (Exception e) {
             e.printStackTrace();
-        } catch (NullPointerException e) {
+        } /*catch (NullPointerException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 }
