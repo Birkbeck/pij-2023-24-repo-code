@@ -1,4 +1,4 @@
-package pij.day11.test.person;
+package pij.day11.person.test;
 
 import org.junit.jupiter.api.Test;
 import pij.day11.person.Person;
@@ -48,6 +48,24 @@ public class PersonTest {
                     String input = null;
                     Person p = new Person(input); // null should lead to NPE
                 });
+    }
+
+    @Test
+    public void testGetInitials_ThreeWordNameDoubleSpace() {
+        String input = "Derek  Robert Yeast";
+        Person p = new Person(input);
+        String actual = p.getInitials();
+        String expected = "DRY";
+        assertEquals(expected, actual, "three-word name, double space separator");
+    }
+
+    @Test
+    public void testGetInitials_ThreeWordNameTripleSpace() {
+        String input = "Derek   Robert Yeast";
+        Person p = new Person(input);
+        String actual = p.getInitials();
+        String expected = "DRY";
+        assertEquals(expected, actual, "three-word name, triple space separator");
     }
 
     // In a "real" testing class, there are usually
