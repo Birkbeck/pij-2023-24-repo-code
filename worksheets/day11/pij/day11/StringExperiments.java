@@ -3,10 +3,10 @@ package pij.day11;
 public class StringExperiments {
 
     public static String build(int max) {
-        String s = "";
+        StringBuilder s = new StringBuilder();
         for (int i = 0; i < max; i++) {
-            s += i;
+            s.append(i);
         }
-        return s;
+        return s.toString();
     }
 }
