@@ -27,4 +27,10 @@ public class ExamResultUtils {
                 classificationsToResults(Collection<? extends ExamResult> results, String exam) {
         return null; // TODO
     }
+
+    public static Map<ExamResult.Classification, List<ExamResult>>
+                allClassificationsToResults(Collection<? extends ExamResult> results, String exam) {
+        return null; // TODO
+    }
+
 }

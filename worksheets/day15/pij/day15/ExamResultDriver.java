@@ -4,6 +4,7 @@ import java.util.List;
 
 import static pij.day15.ExamResultHelper.makeLargeTestData;
 import static pij.day15.ExamResultHelper.makeTestData;
+import static pij.day15.ExamResultUtils.allClassificationsToResults;
 import static pij.day15.ExamResultUtils.classificationsToResults;
 import static pij.day15.ExamResultUtils.getStudents;
 import static pij.day15.ExamResultUtils.getStudentsOnExam;
@@ -33,8 +34,10 @@ public class ExamResultDriver {
         System.out.println("getStudentsOnExam: "
                 + getStudentsOnExam(makeTestData(), "PiJ"));
         System.out.println("groupByExams: " + groupByExams(makeTestData()));
-        System.out.println("getClassificationForExam: "
+        System.out.println("classificationToResults: "
                 + classificationsToResults(makeTestData(), "PiJ"));
+        System.out.println("allClassificationsToResults: "
+                + allClassificationsToResults(makeTestData(), "PiJ"));
 
         System.out.println("getStudentsParallel: " + getStudentsParallel(makeTestData()));
 

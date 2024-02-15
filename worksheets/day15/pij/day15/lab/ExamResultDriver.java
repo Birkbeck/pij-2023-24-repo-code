@@ -29,8 +29,10 @@ public class ExamResultDriver {
         System.out.println("getStudentsOnExam: "
                 + getStudentsOnExam(makeTestData(), "PiJ"));
         System.out.println("groupByExams: " + groupByExams(makeTestData()));
-        System.out.println("getClassificationForExam: "
+        System.out.println("classificationsToResults: "
                 + classificationsToResults(makeTestData(), "PiJ"));
+        System.out.println("allClassificationsToResults: "
+                + allClassificationsToResults(makeTestData(), "PiJ"));
 
         System.out.println("getStudentsParallel: " + getStudentsParallel(makeTestData()));
 
